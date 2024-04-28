@@ -3,5 +3,44 @@
 @tailwind utilities;
 
 html {
-  --line-color: #e5e7eb;
+  --line-color: #e5e7eb; /* Defined custom property */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%; 
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Default font family, replace as needed */
+}
+
+/* Additional base styles to ensure consistent styling across browsers */
+body {
+  line-height: 1.6; /* Adjust line height for readability */
+  background: #fff; /* Default background color, replace with your choice */
+  color: #333; /* Default text color, replace with your choice */
+}
+
+/* Ensure all images and embedded content do not exceed their containers */
+img, iframe, object, embed, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility classes for frequently used styles */
+.full-height {
+  min-height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive text sizing */
+.text-responsive {
+  @apply text-base sm:text-lg md:text-xl;
 }

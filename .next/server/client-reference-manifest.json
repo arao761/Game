@@ -40,6 +40,14 @@
         "async": false
       }
     },
+    "(app-client)/./node_modules/react-hot-toast/dist/index.mjs": {
+      "*": {
+        "id": "(sc_client)/./node_modules/react-hot-toast/dist/index.mjs",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./components/chatbot.tsx": {
       "*": {
         "id": "(sc_client)/./components/chatbot.tsx",
@@ -51,14 +59,6 @@
     "(app-client)/./components/Awards.tsx": {
       "*": {
         "id": "(sc_client)/./components/Awards.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/react-hot-toast/dist/index.mjs": {
-      "*": {
-        "id": "(sc_client)/./node_modules/react-hot-toast/dist/index.mjs",
         "name": "*",
         "chunks": [],
         "async": false
@@ -147,22 +147,6 @@
       ],
       "async": false
     },
-    "/Users/ankitrao/Desktop/Game/components/chatbot.tsx": {
-      "id": "(app-client)/./components/chatbot.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/ankitrao/Desktop/Game/components/Awards.tsx": {
-      "id": "(app-client)/./components/Awards.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/Users/ankitrao/Desktop/Game/node_modules/react-hot-toast/dist/index.mjs": {
       "id": "(app-client)/./node_modules/react-hot-toast/dist/index.mjs",
       "name": "*",
@@ -186,12 +170,28 @@
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
+    },
+    "/Users/ankitrao/Desktop/Game/components/chatbot.tsx": {
+      "id": "(app-client)/./components/chatbot.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ankitrao/Desktop/Game/components/Awards.tsx": {
+      "id": "(app-client)/./components/Awards.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/ankitrao/Desktop/Game/app/page": [],
     "/Users/ankitrao/Desktop/Game/app/layout": [
       "static/css/app/layout.css"
-    ]
+    ],
+    "/Users/ankitrao/Desktop/Game/app/page": []
   }
 }

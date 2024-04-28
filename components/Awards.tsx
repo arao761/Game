@@ -2,12 +2,14 @@
 
 import React, { useState, FC } from 'react';
 
+// Define the Award type for TypeScript
 type Award = {
   title: string;
   description: string;
   imageUrl: string;
 };
 
+// Sample awards data
 const awards: Award[] = [
   {
     title: 'Most Improved Musician',
@@ -26,6 +28,7 @@ const awards: Award[] = [
   },
 ];
 
+// Modal component to display award details
 interface AwardModalProps {
   award: Award | null;
   onClose: () => void;
@@ -46,6 +49,7 @@ const AwardModal: FC<AwardModalProps> = ({ award, onClose }) => {
   );
 };
 
+// Main component for Awards
 const Awards: FC = () => {
   const [selectedAward, setSelectedAward] = useState<Award | null>(null);
 
